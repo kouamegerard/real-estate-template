@@ -1,0 +1,38 @@
+/** 
+ * Filename: app.css
+ * Author: Geneses 0.0
+ * Description: All is beginning
+ * Version: 0.0.1
+ * 
+*/
+
+/** 
+ * Create own css 
+ *
+*/
+
+/* full column */
+.column-12, .column-full, .width-full {
+    width: 100%;
+}
+
+/* 3/4 column */
+.column-3\/4, .column-3\/4, .width-3\/4 {
+    width: 75%;
+}
+
+/* half column */
+.column-6, .column-1\/2, .column-1\/2, .width-1\/2 {
+    width: 50%;
+}
+
+/* 1\/4 column */
+.column-1\/4, .column-1\/4, .column-1\/4, .width-1\/4 {
+    width: 25%;
+}
+
+/* Column by 12 */
+.column-1\/12, .column-1\/12, .column-1\/12, .width-1\/12 {
+    width: calc(1/12)\%;
+}
+
