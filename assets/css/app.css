@@ -31,8 +31,19 @@
     width: 25%;
 }
 
+/**
+ * Column by 12 
+ * 1/12
+ * 2/12
+ * 3/12
+*/
+
+.column-1\/12, .column-1\/12, .column-1\/12, .width-1\/12 {
+    width: 0.083%;
+}
+
 /* Column by 12 */
 .column-1\/12, .column-1\/12, .column-1\/12, .width-1\/12 {
-    width: calc(1/12)\%;
+    width: 0.083%;
 }
 
