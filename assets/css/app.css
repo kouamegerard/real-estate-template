@@ -36,14 +36,303 @@
  * 1/12
  * 2/12
  * 3/12
+ * 4/12
+ * 5/12
+ * 6/12
+ * 7/12
+ * 8/12
+ * 9/12
+ * 10/12
+ * 11/12
+ * 12/12
 */
 
-.column-1\/12, .column-1\/12, .column-1\/12, .width-1\/12 {
-    width: 0.083%;
+.column-1\/12 {
+    width: 8.33%;
 }
 
-/* Column by 12 */
-.column-1\/12, .column-1\/12, .column-1\/12, .width-1\/12 {
-    width: 0.083%;
+/* Column by 2/12 */
+.column-2\/12 {
+    width: 16.66%;
 }
+
+/* Column by 3/12 */
+.column-3\/12 {
+    width: 25%;
+}
+
+/* Column by 4/12 */
+.column-4\/12 {
+    width: 33.33%;
+}
+
+/* Column by 5/12 */
+.column-5\/12 {
+    width: 41.66%;
+}
+
+/* Column by 6/12 */
+.column-6\/12 {
+    width: 50%;
+}
+
+/* Column by 7/12 */
+.column-7\/12 {
+    width: 58.33%;
+}
+
+/* Column by 8/12 */
+.column-8\/12 {
+    width: 66.66%;
+}
+
+/* Column by 9/12 */
+.column-9\/12 {
+    width: 75%;
+}
+
+/* Column by 9/12 */
+.column-10\/12 {
+    width: 83.33%;
+}
+
+/* Column by 9/12 */
+.column-11\/12 {
+    width: 91.66%;
+}
+
+/* Column by 9/12 */
+.column-12\/12 {
+    width: 100%;
+}
+
+/** 
+ * Display Flex
+ */
+.flex { display: flex; }
+
+.justify-content-center{justify-content: center;}
+.justify-content-start{justify-content: start;}
+.justify-content-end{justify-content: end;}
+.justify-content-flex-start{justify-content: flex-start;}
+.justify-content-flex-end{justify-content: flex-end;}
+.justify-content-between{justify-content: space-between;}
+.justify-content-around{justify-content: space-around;}
+.justify-content-evenly{justify-content: space-evenly;}
+.justify-content-safe{justify-content: safe;}
+
+.justify-items-auto {justify-items: auto;}
+.justify-items-baseline {justify-items: baseline;}
+.justify-items-center {justify-items: center;}
+.justify-items-end {justify-items: end;}
+.justify-items-flex-end {justify-items:flex-end}
+.justify-items-flex-start {justify-items:flex-start}
+.justify-items-start {justify-items: start;}
+.justify-items-stretch {justify-items:stretch}
+
+/** 
+ * En cours de developpement
+ *.justify-tracks- {} 
+ * .justify-self- {justify-self: auto;}
+ */
+
+.align-items-center {align-items: center;}
+.align-items-baseline {align-items: baseline;}
+.align-items-stretch {align-items: stretch;}
+.align-items-end {align-items: flex-end;}
+.align-items-start {align-items: flex-start;}
+.align-items-inherit {align-items: inherit;}
+.align-items-initial {align-items: initial;}
+.align-items-unset {align-items: unset;}
+
+/** Convert PX to EM
+ * value v/16 = result"em"
+ * Exemple: 1px to em = 1px/16 = 0.063, the normalize
+ * I want normal space from 1em
+ * so, I do this: (v/16) * 10
+ **/
+/**
+ * Gap and Margin Spacing
+ *
+ */
+.gap-1, .margin { margin: .63em; }
+.gap-2, .margin { margin: 1.25em; }
+.gap-3, .margin { margin: 1.88em; }
+.gap-4, .margin { margin: 2.50em; }
+.gap-5, .margin { margin: 3.13em; }
+.gap-6, .margin { margin: 3.75em; }
+.gap-7, .margin { margin: 4.38em; }
+.gap-8, .margin { margin: 5em; }
+.gap-9, .margin { margin: 5.63em; }
+.gap-10, .margin { margin: 6.25em; }
+.gap-11, .margin { margin: 6.88em; }
+.gap-12, .margin { margin: 7.50em; }
+.gap-13, .margin { margin: 8.13em; }
+.gap-14, .margin { margin: 8.75em; }
+.gap-15, .margin { margin: 9.38em; }
+.gap-16, .margin { margin: 10em; }
+.gap-17, .margin { margin: 10.63em; }
+.gap-18, .margin { margin: 12.5em; }
+.gap-19, .margin { margin: 18.8em; }
+.gap-20, .margin { margin: 20.5em; }
+.gap-21, .margin { margin: 31.3em; }
+.gap-22, .margin { margin: 38em; }
+.gap-23, .margin { margin: 43em; }
+.gap-24, .margin { margin: 50em; }
+.gap-25, .margin { margin: 56.3em; }
+.gap-26, .margin { margin: 62.5em; }
+.gap-27, .margin { margin: 68.8em; }
+.gap-29, .margin { margin: 75em; }
+.gap-30, .margin { margin: 81em; }
+.gap-31, .margin { margin: 87.5em; }
+.gap-32, .margin { margin: 90em; }
+.gap-33, .margin { margin: 100em; }
+
+/**
+ * Margin Top
+ * 
+ */
+.margin-t-1 { margin-top: .63em; }
+.margin-t-2 { margin-top: 1.25em; }
+.margin-t-3 { margin-top: 1.88em; }
+.margin-t-4 { margin-top: 2.50em; }
+.margin-t-5{ margin-top: 3.13em; }
+.margin-t-6{ margin-top: 3.75em; }
+.margin-t-7{ margin-top: 4.38em; }
+.margin-t-8{ margin-top: 5em; }
+.margin-t-9{ margin-top: 5.63em; }
+.margin-t-10{ margin-top: 6.25em; }
+.margin-t-11{ margin-top: 6.88em; }
+.margin-t-12{ margin-top: 7.50em; }
+.margin-t-13{ margin-top: 8.13em; }
+.margin-t-14{ margin-top: 8.75em; }
+.margin-t-15{ margin-top: 9.38em; }
+.margin-t-16{ margin-top: 10em; }
+.margin-t-17{ margin-top: 10.63em; }
+.margin-t-18{ margin-top: 12.5em; }
+.margin-t-19{ margin-top: 18.8em; }
+.margin-t-20{ margin-top: 20.5em; }
+.margin-t-21{ margin-top: 31.3em; }
+.margin-t-22{ margin-top: 38em; }
+.margin-t-23{ margin-top: 43em; }
+.margin-t-24{ margin-top: 50em; }
+.margin-t-25{ margin-top: 56.3em; }
+.margin-t-26{ margin-top: 62.5em; }
+.margin-t-27{ margin-top: 68.8em; }
+.margin-t-29{ margin-top: 75em; }
+.margin-t-30{ margin-top: 81em; }
+.margin-t-31{ margin-top: 87.5em; }
+.margin-t-32{ margin-top: 90em; }
+.margin-t-33{ margin-top: 100em; }
+
+/**
+ * Margin Right
+ * 
+ */
+.margin-r-1 { margin-right: .63em; }
+.margin-r-2 { margin-right: 1.25em; }
+.margin-r-3 { margin-right: 1.88em; }
+.margin-r-4 { margin-right: 2.50em; }
+.margin-r-5{ margin-right: 3.13em; }
+.margin-r-6{ margin-right: 3.75em; }
+.margin-r-7{ margin-right: 4.38em; }
+.margin-r-8{ margin-right: 5em; }
+.margin-r-9{ margin-right: 5.63em; }
+.margin-r-10{ margin-right: 6.25em; }
+.margin-r-11{ margin-right: 6.88em; }
+.margin-r-12{ margin-right: 7.50em; }
+.margin-r-13{ margin-right: 8.13em; }
+.margin-r-14{ margin-right: 8.75em; }
+.margin-r-15{ margin-right: 9.38em; }
+.margin-r-16{ margin-right: 10em; }
+.margin-r-17{ margin-right: 10.63em; }
+.margin-r-18{ margin-right: 12.5em; }
+.margin-r-19{ margin-right: 18.8em; }
+.margin-r-20{ margin-right: 20.5em; }
+.margin-r-21{ margin-right: 31.3em; }
+.margin-r-22{ margin-right: 38em; }
+.margin-r-23{ margin-right: 43em; }
+.margin-r-24{ margin-right: 50em; }
+.margin-r-25{ margin-right: 56.3em; }
+.margin-r-26{ margin-right: 62.5em; }
+.margin-r-27{ margin-right: 68.8em; }
+.margin-r-29{ margin-right: 75em; }
+.margin-r-30{ margin-right: 81em; }
+.margin-r-31{ margin-right: 87.5em; }
+.margin-r-32{ margin-right: 90em; }
+.margin-r-33{ margin-right: 100em; }
+
+/**
+ * Margin Bottom
+ * 
+ */
+.margin-b-1 { margin-bottom: .63em; }
+.margin-b-2 { margin-bottom: 1.25em; }
+.margin-b-3 { margin-bottom: 1.88em; }
+.margin-b-4 { margin-bottom: 2.50em; }
+.margin-b-5{ margin-bottom: 3.13em; }
+.margin-b-6{ margin-bottom: 3.75em; }
+.margin-b-7{ margin-bottom: 4.38em; }
+.margin-b-8{ margin-bottom: 5em; }
+.margin-b-9{ margin-bottom: 5.63em; }
+.margin-b-10{ margin-bottom: 6.25em; }
+.margin-b-11{ margin-bottom: 6.88em; }
+.margin-b-12{ margin-bottom: 7.50em; }
+.margin-b-13{ margin-bottom: 8.13em; }
+.margin-b-14{ margin-bottom: 8.75em; }
+.margin-b-15{ margin-bottom: 9.38em; }
+.margin-b-16{ margin-bottom: 10em; }
+.margin-b-17{ margin-bottom: 10.63em; }
+.margin-b-18{ margin-bottom: 12.5em; }
+.margin-b-19{ margin-bottom: 18.8em; }
+.margin-b-20{ margin-bottom: 20.5em; }
+.margin-b-21{ margin-bottom: 31.3em; }
+.margin-b-22{ margin-bottom: 38em; }
+.margin-b-23{ margin-bottom: 43em; }
+.margin-b-24{ margin-bottom: 50em; }
+.margin-b-25{ margin-bottom: 56.3em; }
+.margin-b-26{ margin-bottom: 62.5em; }
+.margin-b-27{ margin-bottom: 68.8em; }
+.margin-b-29{ margin-bottom: 75em; }
+.margin-b-30{ margin-bottom: 81em; }
+.margin-b-31{ margin-bottom: 87.5em; }
+.margin-b-32{ margin-bottom: 90em; }
+.margin-b-33{ margin-bottom: 100em; }
+
+/**
+ * Margin Left
+ * 
+ */
+.margin-l-1 { margin-left: .63em; }
+.margin-l-2 { margin-left: 1.25em; }
+.margin-l-3 { margin-left: 1.88em; }
+.margin-l-4 { margin-left: 2.50em; }
+.margin-l-5{ margin-left: 3.13em; }
+.margin-l-6{ margin-left: 3.75em; }
+.margin-l-7{ margin-left: 4.38em; }
+.margin-l-8{ margin-left: 5em; }
+.margin-l-9{ margin-left: 5.63em; }
+.margin-l-10{ margin-left: 6.25em; }
+.margin-l-11{ margin-left: 6.88em; }
+.margin-l-12{ margin-left: 7.50em; }
+.margin-l-13{ margin-left: 8.13em; }
+.margin-l-14{ margin-left: 8.75em; }
+.margin-l-15{ margin-left: 9.38em; }
+.margin-l-16{ margin-left: 10em; }
+.margin-l-17{ margin-left: 10.63em; }
+.margin-l-18{ margin-left: 12.5em; }
+.margin-l-19{ margin-left: 18.8em; }
+.margin-l-20{ margin-left: 20.5em; }
+.margin-l-21{ margin-left: 31.3em; }
+.margin-l-22{ margin-left: 38em; }
+.margin-l-23{ margin-left: 43em; }
+.margin-l-24{ margin-left: 50em; }
+.margin-l-25{ margin-left: 56.3em; }
+.margin-l-26{ margin-left: 62.5em; }
+.margin-l-27{ margin-left: 68.8em; }
+.margin-l-29{ margin-left: 75em; }
+.margin-l-30{ margin-left: 81em; }
+.margin-l-31{ margin-left: 87.5em; }
+.margin-l-32{ margin-left: 90em; }
+.margin-l-33{ margin-left: 100em; }
 
