@@ -11,6 +11,17 @@
  *
 */
 /** 
+ * Layout
+ * Container
+*/
+.container-break-none {width: 100%;}
+.container-break-small {max-width: 640px;}
+.container-break-medium {max-width: 768px;}
+.container-break-large {max-width: 1024px;}
+.container-break-larger {max-width: 1280px;}
+.container-break-largest {max-width: 1536px;}
+
+/** 
  * Sizing
  *
 */
