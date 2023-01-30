@@ -1,0 +1,42 @@
+:root {
+    --color-primary: #3965F3;
+}
+
+.header-custom {
+    border-bottom: .1rem solid rgb(206 206 206 / 25%);
+}
+
+/* Menu Burger Bars */
+.menu-bars {
+    background-color: var(--color-primary);
+    position: relative;
+    border-radius: 3px;
+}
+
+.menu-bars::before {
+    content: "";
+    width: 1.6rem;
+    height: 0.125rem;
+    position: absolute;
+    top: -8px;
+    background-color: var(--color-primary);
+    border-radius: 3px;
+}
+
+.menu-bars::after {
+    content: "";
+    width: 1.6rem;
+    height: 0.125rem;
+    position: absolute;
+    top: 8px;
+    background-color: var(--color-primary);
+    border-radius: 3px;
+}
+
+.active span a {
+    color: var(--color-primary);
+}
+
+ul li span a:hover {
+    color: var(--color-primary);
+}

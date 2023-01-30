@@ -10,6 +10,128 @@
  * Create own css 
  *
 */
+
+/** 
+ * Typography
+ * 
+*/
+/** 
+ * Font Family 
+ *
+*/
+.font-family-sans {font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";}
+.font-family-serif {font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;}
+.font-family-mono {font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;}
+/** 
+ * Font Size
+*/
+.font-text-xs {
+    font-size: 0.75rem; /* 12px */
+    line-height: 1rem; /* 16px */
+}
+.font-text-sm {
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.25rem; /* 20px */
+}
+.font-text-base {
+    font-size: 1rem; /* 16px */
+    line-height: 1.5rem; /* 24px */
+}
+.font-text-lg {
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.75rem; /* 28px */
+}
+.font-text-xl { 
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.75rem; /* 28px */
+}
+.font-text-2xl {
+    font-size: 1.5rem; /* 24px */
+    line-height: 2rem; /* 32px */
+}
+.font-text-3xl {
+    font-size: 1.875rem; /* 30px */
+    line-height: 2.25rem; /* 36px */
+}
+.font-text-4xl {
+    font-size: 2.25rem; /* 36px */
+    line-height: 2.5rem; /* 40px */
+}
+.font-text-5xl {
+    font-size: 3rem; /* 48px */
+    line-height: 1;
+}
+.font-text-6xl {
+    font-size: 3.75rem; /* 60px */
+    line-height: 1;
+}
+.font-text-7xl {
+    font-size: 4.5rem; /* 72px */
+    line-height: 1;
+}
+.font-text-8xl {
+    font-size: 6rem; /* 96px */
+    line-height: 1;
+}
+.font-text-9xl {
+    font-size: 8rem; /* 128px */
+    line-height: 1;
+}
+
+/**
+ * Font Weight
+ * 
+*/
+.font-weight-thin {font-weight: 100;}
+.font-weight-extralight {font-weight: 200;}
+.font-weight-light {font-weight: 300;}
+.font-weight-normal {font-weight: 400;}
+.font-weight-medium {font-weight: 500;}
+.font-weight-semibold {font-weight: 600;}
+.font-weight-bold {font-weight: 700;}
+.font-weight-extrabold {font-weight: 800;}
+.font-weight-black {font-weight: 900;}
+
+/** 
+ * List Style */
+.ul-list-inside {list-style-position: inside;}
+.ul-list-outside {list-style-position: outside;}
+
+.ul-list-none {list-style-type: none;}
+.ul-list-disc {list-style-type: disc;}
+.ul-list-decimal {list-style-type: decimal;}
+
+/** 
+ * Text Decoration
+ * 
+ */
+.text-deco-underline {text-decoration-line: underline;}
+.text-deco-overline {text-decoration-line: overline;}
+.text-deco-line-through {text-decoration-line: line-through;}
+.text-deco-no-underline {text-decoration-line: none}
+
+/**
+ * Text Transform 
+ *
+*/
+.text-transform-uppercase {text-transform: uppercase;}
+.text-transform-lowercase {text-transform: lowercase;}
+.text-transform-capitalize {text-transform: capitalize;}
+.text-transform-normal-case {text-transform: none;}
+
+/** 
+ * Text Color
+*/
+.color-text-inherit {color: inherit;}
+.color-text-transparent	{color: transparent;}
+.color-text-dark {color: rgb(0 0 0);}
+.color-text-white {color: rgb(255 255 255);}
+.color-text-white-50 {color: rgb(248 250 252);}
+.color-text-white-100 {color: rgb(241 245 249);}
+.color-text-white-200 {color: rgb(226 232 240);}
+.color-text-white-300 {color: rgb(203 213 225);}
+.color-text-white-400 {color: rgb(148 163 184);}
+
 /** 
  * Layout
  * Container
@@ -20,6 +142,19 @@
 .container-break-large {max-width: 1024px;}
 .container-break-larger {max-width: 1280px;}
 .container-break-largest {max-width: 1536px;}
+
+/** 
+ * Overflow
+ * 
+*/
+.overflow-auto {overflow: auto;}
+.overflow-hidden {overflow: hidden;}
+.overflow-clip {overflow: clip;}
+.overflow-visible {overflow: visible;}
+.overflow-scroll {overflow: scroll;}
+.overflow-x-auto {overflow-x: auto;}
+.overflow-y-auto {overflow-y: auto;}
+.overflow-x-hidden {overflow-x: hidden;}
 
 /** 
  * Sizing
@@ -344,9 +479,10 @@
 }
 
 /** 
- * Display Flex
+ * Display
  */
-.flex { display: flex; }
+.display-flex { display: flex; }
+.display-block { display: block; }
 
 .justify-content-center{justify-content: center;}
 .justify-content-start{justify-content: start;}
@@ -621,6 +757,7 @@
  * 
  */
 .margin-l-0 { margin-left: 0; }
+.margin-l-0\.5 { margin-left: 0.063; }
 .margin-l-1 { margin-left: .63em; }
 .margin-l-2 { margin-left: 1.25em; }
 .margin-l-3 { margin-left: 1.88em; }
@@ -920,4 +1057,18 @@
 .padding-x-32{ padding-right: 90em; padding-left: 90em; }
 .padding-x-33{ padding-right: 100em; padding-left: 100em; }
 
+/** 
+ *Effects
+*/
 
+/** 
+ * Box Shadow
+ */
+.box-shadow-sm {box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);}
+.box-shadow {box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);}
+.box-shadow-md {box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);}
+.box-shadow-lg {box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);}
+.box-shadow-xl {box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);}
+.box-shadow-2xl {box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);}
+.box-shadow-inner {box-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);}
+.box-shadow-none {box-shadow: 0 0 #0000;}
