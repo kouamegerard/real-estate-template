@@ -1,6 +1,4 @@
-:root {
-    --color-primary: #3965F3;
-}
+@import url("./app.css");
 
 .header-custom {
     border-bottom: .1rem solid rgb(206 206 206 / 25%);
@@ -10,7 +8,7 @@
 .menu-bars {
     background-color: var(--color-primary);
     position: relative;
-    border-radius: 3px;
+    border-radius: 8px;
 }
 
 .menu-bars::before {
@@ -20,7 +18,7 @@
     position: absolute;
     top: -8px;
     background-color: var(--color-primary);
-    border-radius: 3px;
+    border-radius: 8px;
 }
 
 .menu-bars::after {
@@ -30,7 +28,7 @@
     position: absolute;
     top: 8px;
     background-color: var(--color-primary);
-    border-radius: 3px;
+    border-radius: 8px;
 }
 
 .active span a {

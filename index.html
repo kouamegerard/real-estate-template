@@ -25,7 +25,7 @@
 <body>
     
     <div class="container-none height-screen overflow-hidden">
-        <div class="display-flex justify-content-between align-items-center padding-1 padding-x-12 height-16 header-custom">
+        <div class="display-flex justify-content-between align-items-center padding-1 padding-x-12 height-16 header-custom box-shadow-sm">
             <div class="menu-hamburger">
                 <span id="menu-hmbugrger" class="menu-bars width-4 height-0.5 display-block"></span>
             </div>
@@ -56,13 +56,81 @@
             </div>
             <!-- Result posts -->
 
-            <div class="">
+            <div class="width-full">
+                <form class="display-flex justify-content-between align-items-center width-full">
+                    <div class="display-flex justify-content-between align-items-center">
 
+                        <div class="position-relative margin-r-4 display-block width-32">
+                            <input type="text" id="voice-search" class="box-shadow-2xl font-family-sans text-sm display-block width-full padding-l-2 padding-r-4 padding-y-1.5 border-radius-lg" placeholder="Search by city..." required>
+                            <span class="font-family-sans position-absolute padding-r-0 pos-top-1.5 pos-right-0 color-primary" style="right: -45px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="font-family-sans icon icon-tabler icon-tabler-home-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M21 12l-9 -9l-9 9h2v7a2 2 0 0 0 2 2h4.7"></path>
+                                    <path d="M9 21v-6a2 2 0 0 1 2 -2h2"></path>
+                                    <path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                                    <path d="M20.2 20.2l1.8 1.8"></path>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="position-relative margin-l-2">
+                            <select class="box-shadow-2xl font-family-sans text-sm display-block width-full padding-l-1 padding-r-4 padding-y-1.5 border-radius-lg color-text-white-300">
+                                <option disabled selected>Any Price</option>
+                                <option value="$12">$12</option>
+                                <option value="$22">$22</option>
+                                <option value="$42">$42</option>
+                                <option value="$92">$92</option> 
+                            </select>
+                        </div>
+                        <div class="position-relative margin-l-1">
+                            <select class="box-shadow-2xl font-family-sans background-blue-500 text-sm display-block width-full padding-l-1 padding-r-4 padding-y-1.5 border-radius-lg color-text-white">
+                                <option disabled>Rooms</option>
+                                <option value="1-2 Beds" >1 - 2 Beds</option>
+                                <option value="1-3 Beds" selected>1 - 3 Beds</option>
+                                <option value="1-4 Beds">1 - 4 Beds</option>
+                                <option value="1-5 Beds">1 - 5 Beds</option>
+                                <option value="1-6 Beds">1 - 6 Beds</option>
+                                <option value="1-7 Beds">1 - 7 Beds</option>
+                            </select>
+                        </div>
+                        <div class="position-relative margin-l-1">
+                            <select class="box-shadow-2xl font-family-sans text-sm display-block width-full padding-l-1 padding-r-4 padding-y-1.5 border-radius-lg color-text-white-300">
+                                <option disabled selected>All Types</option>
+                                <option value="Villa">Villa</option>
+                                <option value="R+4">R+4</option>
+                                <option value="R+3">R+3</option>
+                                <option value="Building">Building</option> 
+                            </select>
+                        </div>
+                        <div class="position-relative margin-l-1">
+                            <select class="box-shadow-2xl font-family-sans font-text-sm display-block width-full padding-l-1 padding-r-4 padding-y-1.5 border-radius-lg color-text-white-300">
+                                <option disabled selected>More Filters</option>
+                                <option value="Filter item 1">Filter item 1</option>
+                                <option value="Filter item 1">Filter item 1</option>
+                                <option value="Filter item 1">Filter item 1</option>
+                                <option value="Filter item 1">Filter item 1</option> 
+                            </select>
+                        </div>
+                    </div>
+                    <div class="display-flex justify-content-evenly align-items-center">
+                        <div class="display-flex justify-content-evenly align-items-center box-shadow-2xl cursor-pointer">
+                            <div class="switch-on-off background-green-600 width-7 height-4 border-radius-full position-relative">
+                                <span class="switch-off display-none height-3 width-3 display-block background-slate-400 border-radius-full border-color-white border-style-solid border-width position-absolute pos-left-0.05 pos-top-0.05"></span>
+                                <span class="switch-on height-3 width-3 display-block background-white border-radius-full border-color-white border-style-solid border-width position-absolute pos-right-0.05 pos-top-0.05"></span>
+                            </div>
+                            <span class="font-family-sans font-text-sm margin-l-0.5 color-text-white-500">Map View</span>
+                        </div>
+                        <div class="margin-l-2">
+                            <div class="background-slate-100 padding-1 box-shadow-2xl font-family-sans font-text-xs border-radius-lg color-text-white-500 box-shadow-2xl cursor-pointer">Sorted by: Newest</div>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
         <!-- Data & Searching -->
 
-        <div class="display-block"></div>
+        <div class="display-flex justify-content-around align-items-center">
+            
+        </div>
     </div>
     <!-- .container-none -->
 
