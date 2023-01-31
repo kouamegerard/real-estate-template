@@ -13,11 +13,45 @@
 
     <!-- Icon Design From Tabler Icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css">
+    <!-- Mapbox -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />  
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css' type='text/css' />  
+    
     <!-- CSS Link -->
     <link rel="stylesheet" href="./assets/css/reset-css/meyerweb-reset.css">
     <link rel="stylesheet" href="./assets/css/app.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- Ednded CSS Link -->
+
+    <!-- Stylesheet -->
+    <style>
+        #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+        .marker {
+            background-color: #0443cc;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .mapboxgl-popup {
+            max-width: 200px;
+        }
+        .mapboxgl-popup-content {
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .mapboxgl-popup.mapboxgl-popup-anchor-bottom {
+            max-width: 378px!important;
+        }
+
+        .mapboxgl-popup-content {
+            border-radius: .8rem;
+            width: 280px;
+            padding: 10px 10px 24px;
+        }
+    </style>
+    <!-- End Stylesheet -->
 
     <!-- Script Plugin in header -->
     <!-- Ednded Script Plugin in header -->
@@ -49,7 +83,7 @@
         </div>
         <!-- .display-flex.justify-content-between Header section -->
 
-        <div class="display-block padding-x-12">
+        <div class="display-block padding-x-12 filter-view padding-t-2 padding-b-5">
             <div class="padding-y-3 display-flex align-items-baseline">
                 <h3 class="font-text-3xl font-weight-300 font-family-sans text-transform-capitalize">100 results</h3>
                 <small class="margin-l-1 font-weight-thin font-family-sans color-text-white-400 font-text-sm">in Dakar city</small>
@@ -128,15 +162,152 @@
         </div>
         <!-- Data & Searching -->
 
-        <div class="display-flex justify-content-around align-items-center">
+        <div class="display-flex justify-content-start align-items-center background-slate-50">
+            <div class="map-view position-relative">
+                <div id='map' style='width: 800px; height: 800px;'></div>
+            </div>
+            <!-- Map View -->
             
+            <div class="products-view"></div>
+            <!-- Products View -->
         </div>
+        <!-- Data Products -->
     </div>
     <!-- .container-none -->
 
 
     <!-- Script Plugin in footer -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js'></script>
     <script src="./assets/js/app.js" defer></script>
+    <script>
+        const YOUR_MAPBOX_ACCESS_TOKEN = "pk.eyJ1IjoiZ2VuZXNlcyIsImEiOiJjbGRrYXV6bXAwMDJvM3htaXNpaW01bzExIn0.2PlpS9oAyAuQwCQXVjLsMw";
+        mapboxgl.accessToken = YOUR_MAPBOX_ACCESS_TOKEN;
+        var map = new mapboxgl.Map({
+            container: 'map',
+            zoom: 17,
+            pitch: 18,
+            style: 'mapbox://styles/mapbox/light-v11', // The map style to use
+            center: [-17.4617494, 14.7614788], // Starting position [lng, lat]
+        });
+        
+        const geojson = {
+            type: 'FeatureCollection',
+            features: [
+                {
+                    type: 'Feature',
+                    geometry: {
+                        type: 'Point',
+                        coordinates: [-17.4600000, 14.7614788]
+                    },
+                    properties: {
+                        image: "./assets/images/houses/home-unsplash-02.jpeg",
+                        title: 'Mapbox',
+                        description: 'Rue BCEAO, D.C.'
+                    }
+                },
+                {
+                    type: 'Feature',
+                    geometry: {
+                        type: 'Point',
+                        coordinates: [-17.4624790, 14.7614700]
+                    },
+                    properties: {
+                        image: "./assets/images/houses/home-unsplash-03.jpeg",
+                        title: 'Mapbox',
+                        description: 'Dakar, Senegal'
+                    }
+                },
+                {
+                    type: 'Feature',
+                    geometry: {
+                        type: 'Point',
+                        coordinates: [-17.4617474, 14.7614798]
+                    },
+                    properties: {
+                        image: "./assets/images/houses/home-unsplash-01.jpeg",
+                        title: 'Mapbox',
+                        description: 'Plage BCEAO, Dakar Senegal'
+                    }
+                },
+                {
+                    type: 'Feature',
+                    geometry: {
+                        type: 'Point',
+                        coordinates: [-17.4634790, 14.7615700]
+                    },
+                    properties: {
+                        image: "./assets/images/houses/home-unsplash-03.jpeg",
+                        title: 'Mapbox',
+                        description: 'Dakar 1, Senegal'
+                    }
+                },
+                {
+                    type: 'Feature',
+                    geometry: {
+                        type: 'Point',
+                        coordinates: [-17.4617474, 14.7619845]
+                    },
+                    properties: {
+                        image: "./assets/images/houses/home-unsplash-01.jpeg",
+                        title: 'Mapbox',
+                        description: 'Plage BCEAO 0, Dakar Senegal'
+                    }
+                },
+                {
+                    type: 'Feature',
+                    geometry: {
+                        type: 'Point',
+                        coordinates: [-17.4610000, 14.76170000]
+                    },
+                    properties: {
+                        image: "./assets/images/houses/home-unsplash-02.jpeg",
+                        title: 'Mapbox',
+                        description: 'Rue BCEAO 1, DAKAR D.C.'
+                    }
+                },
+                {
+                    type: 'Feature',
+                    geometry: {
+                        type: 'Point',
+                        coordinates: [-17.4610000, 14.76108965]
+                    },
+                    properties: {
+                        image: "./assets/images/houses/home-unsplash-01.jpeg",
+                        title: 'Mapbox',
+                        description: 'Rue BCEAO 2, DAKAR D.C.'
+                    }
+                },
+            ]
+        };
+        // add markers to map
+        for (const feature of geojson.features) {
+            // create a HTML element for each feature
+            const el = document.createElement('div');
+            el.className = 'marker';
+            
+            // make a marker for each feature and add it to the map
+            new mapboxgl.Marker(el)
+                .setLngLat(feature.geometry.coordinates)
+                .setPopup(
+            new mapboxgl.Popup({ offset: 25 }) // add popups
+                .setHTML(
+                    `
+                        <div class="display-flex width-72 height-16">
+                            <div class="width-24 height-20">
+                                <img src="${feature.properties.image}" class="image-responsive border-radius-2xl width-full height-full" />
+                            </div>
+                            <div>
+                                <h3>${feature.properties.title}</h3>
+                                <p>${feature.properties.description}</p>
+                            </div>
+                        </div>
+                    `
+                )
+            ).addTo(map);
+        }
+    </script>
+
     <!-- Ednded Script Plugin in footer -->
 
 </body>
