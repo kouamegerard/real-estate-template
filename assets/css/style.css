@@ -38,3 +38,36 @@
 ul li span a:hover {
     color: var(--color-primary);
 }
+
+/**
+ * MapBox Style 
+*/
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+.marker {
+    background-color: #0443cc;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.mapboxgl-popup {
+    max-width: 200px;
+}
+
+.mapboxgl-popup.mapboxgl-popup-anchor-bottom {
+    max-width: 378px!important;
+}
+
+.mapboxgl-popup-content {
+    border-radius: .5rem;
+    width: 248px;
+    padding: 14px 8px 14px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.mapbox-price {
+    padding: 1.3px 3px;
+    border-radius: 2px;
+}

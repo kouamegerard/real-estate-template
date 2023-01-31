@@ -24,39 +24,13 @@
     <!-- Ednded CSS Link -->
 
     <!-- Stylesheet -->
-    <style>
-        #map { position: absolute; top: 0; bottom: 0; width: 100%; }
-        .marker {
-            background-color: #0443cc;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            cursor: pointer;
-        }
-
-        .mapboxgl-popup {
-            max-width: 200px;
-        }
-        .mapboxgl-popup-content {
-            text-align: center;
-            font-family: 'Open Sans', sans-serif;
-        }
-        .mapboxgl-popup.mapboxgl-popup-anchor-bottom {
-            max-width: 378px!important;
-        }
-
-        .mapboxgl-popup-content {
-            border-radius: .8rem;
-            width: 280px;
-            padding: 10px 10px 24px;
-        }
-    </style>
+    <style></style>
     <!-- End Stylesheet -->
 
     <!-- Script Plugin in header -->
     <!-- Ednded Script Plugin in header -->
 </head>
-<body>
+<body class="antialias">
     
     <div class="container-none height-screen overflow-hidden">
         <div class="display-flex justify-content-between align-items-center padding-1 padding-x-12 height-16 header-custom box-shadow-sm">
@@ -165,6 +139,7 @@
         <div class="display-flex justify-content-start align-items-center background-slate-50">
             <div class="map-view position-relative">
                 <div id='map' style='width: 800px; height: 800px;'></div>
+                
             </div>
             <!-- Map View -->
             
@@ -202,7 +177,8 @@
                     },
                     properties: {
                         image: "./assets/images/houses/home-unsplash-02.jpeg",
-                        title: 'Mapbox',
+                        price: "1.000.000 FCFA",
+                        title: 'Cité ici là bas',
                         description: 'Rue BCEAO, D.C.'
                     }
                 },
@@ -214,7 +190,8 @@
                     },
                     properties: {
                         image: "./assets/images/houses/home-unsplash-03.jpeg",
-                        title: 'Mapbox',
+                        price: "1.000.000 FCFA",
+                        title: 'Cité babi',
                         description: 'Dakar, Senegal'
                     }
                 },
@@ -226,7 +203,8 @@
                     },
                     properties: {
                         image: "./assets/images/houses/home-unsplash-01.jpeg",
-                        title: 'Mapbox',
+                        price: "1.000.000 FCFA",
+                        title: 'Ouest Foire Residence',
                         description: 'Plage BCEAO, Dakar Senegal'
                     }
                 },
@@ -238,7 +216,8 @@
                     },
                     properties: {
                         image: "./assets/images/houses/home-unsplash-03.jpeg",
-                        title: 'Mapbox',
+                        price: "1.000.000 FCFA",
+                        title: 'Apexci',
                         description: 'Dakar 1, Senegal'
                     }
                 },
@@ -250,7 +229,8 @@
                     },
                     properties: {
                         image: "./assets/images/houses/home-unsplash-01.jpeg",
-                        title: 'Mapbox',
+                        price: "1.000.000 FCFA",
+                        title: 'Cité Poste Djily Mbaye',
                         description: 'Plage BCEAO 0, Dakar Senegal'
                     }
                 },
@@ -262,7 +242,8 @@
                     },
                     properties: {
                         image: "./assets/images/houses/home-unsplash-02.jpeg",
-                        title: 'Mapbox',
+                        price: "1.000.000 FCFA",
+                        title: 'Residence Machallah',
                         description: 'Rue BCEAO 1, DAKAR D.C.'
                     }
                 },
@@ -274,7 +255,8 @@
                     },
                     properties: {
                         image: "./assets/images/houses/home-unsplash-01.jpeg",
-                        title: 'Mapbox',
+                        price: "1.000.000 FCFA",
+                        title: 'House Cité BCEAO',
                         description: 'Rue BCEAO 2, DAKAR D.C.'
                     }
                 },
@@ -293,13 +275,14 @@
             new mapboxgl.Popup({ offset: 25 }) // add popups
                 .setHTML(
                     `
-                        <div class="display-flex width-72 height-16">
+                        <div class="display-flex align-items-center width-full height-16">
                             <div class="width-24 height-20">
-                                <img src="${feature.properties.image}" class="image-responsive border-radius-2xl width-full height-full" />
+                                <img src="${feature.properties.image}" class="image-responsive border-radius-xl width-full height-full" />
                             </div>
-                            <div>
-                                <h3>${feature.properties.title}</h3>
-                                <p>${feature.properties.description}</p>
+                            <div class="display-block padding-x-1">
+                                <small class="font-text-xs background-slate-200 padding-1.5 border-radius-xl mapbox-price">${feature.properties.price}</small>
+                                <h3 class="font-family-mono color-text-white-400 font-text-xs">${feature.properties.title}</h3>
+                                <p class="font-family-mono color-text-white-400 font-text-xs">${feature.properties.description}</p>
                             </div>
                         </div>
                     `

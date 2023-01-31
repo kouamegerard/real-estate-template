@@ -10,6 +10,7 @@
      * Colors
      * Text Colors
      * Background color */
+    --text-white: rgb(255 255 255);
     --text-white-300: rgb(203 213 225);
     --color-primary: #3965F3;
 }
@@ -17,6 +18,9 @@
  * Create own css 
  *
 */
+.antialias {
+    background-color: var(--text-white);
+}
 /** 
  * Cursor 
 */
