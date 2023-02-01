@@ -44,6 +44,7 @@ ul li span a:hover {
 */
 #map { position: absolute; top: 0; bottom: 0; width: 100%; }
 .marker {
+    /* background-color: linear-gradient( var(--blue-700), var(--blue-600) ); */
     background-color: #0443cc;
     width: 20px;
     height: 20px;
@@ -70,4 +71,8 @@ ul li span a:hover {
 .mapbox-price {
     padding: 1.3px 3px;
     border-radius: 2px;
+}
+
+.mapbox-active {
+    background-color: var(--blue-600);
 }

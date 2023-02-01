@@ -13,6 +13,10 @@
     --text-white: rgb(255 255 255);
     --text-white-300: rgb(203 213 225);
     --color-primary: #3965F3;
+
+    /** Background */
+    --blue-700: rgb(29 78 216);
+    --blue-600: rgb(37 99 235);
 }
 /** 
  * Create own css 
@@ -165,8 +169,8 @@
 .background-blue-300	{background-color: rgb(147 197 253);}
 .background-blue-400	{background-color: rgb(96 165 250);}
 .background-blue-500	{background-color: rgb(59 130 246);}
-.background-blue-600	{background-color: rgb(37 99 235);}
-.background-blue-700	{background-color: rgb(29 78 216);}
+.background-blue-600	{background-color: var(--blue-600);}
+.background-blue-700	{background-color: var(--blue-700);}
 .background-blue-800	{background-color: rgb(30 64 175);}
 .background-blue-900	{background-color: rgb(30 58 138);}
 /** 
@@ -611,6 +615,7 @@ right: 3.5rem; /* 56px */}
 .pos-right-20 {right: 5rem; /* 80px */}
 .pos-bottom-20 {bottom: 5rem; /* 80px */}
 .pos-left-20 {left: 5rem; /* 80px */}
+.pos-top-22 {top: 5.5rem; /* 96px */}
 .pos-inset-24 {
     top: 6rem; /* 96px */
     right: 6rem; /* 96px */
@@ -1003,6 +1008,18 @@ right: 3.5rem; /* 56px */}
 .pos-left-2\/4 {left: 50%;}
 .pos-left-3\/4 {left: 75%;}
 .pos-left-full {left: 100%;}
+
+/** 
+ * Z-index 
+*/
+.z-index-0 {z-index: 0;}
+.z-index-10 {z-index: 10;}
+.z-index-20 {z-index: 20;}
+.z-index-30 {z-index: 30;}
+.z-index-40 {z-index: 40;}
+.z-index-50 {z-index: 50;}
+.z-index-99 {z-index: 99;}
+.z-index-auto {z-index: auto;}
 
 /** 
  * Sizing

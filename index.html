@@ -136,14 +136,80 @@
         </div>
         <!-- Data & Searching -->
 
-        <div class="display-flex justify-content-start align-items-center background-slate-50">
-            <div class="map-view position-relative">
+        <div class="display-flex justify-content-start align-items-center background-slate-50 height-full">
+            <div class="map-view position-relative height-full">
                 <div id='map' style='width: 800px; height: 800px;'></div>
-                
+                <div class="mapbox-navigation padding-x-1 padding-b-2 padding-t-2 background-white border-radius-full position-absolute pos-left-8 pos-top-28">
+                    <div class="map-box-nav display-block">
+                        <span class="display-block margin-y-2 border-radius-full width-9 height-9 mapbox-active">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="display-block color-text-white icon icon-tabler icon-tabler-category" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="padding: 8px 8px;">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M4 4h6v6h-6z"></path>
+                                <path d="M14 4h6v6h-6z"></path>
+                                <path d="M4 14h6v6h-6z"></path>
+                                <path d="M17 17m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                            </svg>
+                        </span>
+
+                        <span class="display-block margin-y-2 border-radius-full background-slate-50 color-text-white-400 width-9 height-9">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="display-block icon icon-tabler icon-tabler-square-toggle" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="padding: 8px 8px;">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M12 2l0 20"></path>
+                                <path d="M14 20h-8a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h8"></path>
+                                <path d="M20 6a2 2 0 0 0 -2 -2"></path>
+                                <path d="M18 20a2 2 0 0 0 2 -2"></path>
+                                <path d="M20 10l0 4"></path>
+                             </svg>
+                        </span>
+
+                        <span class="display-block margin-y-2 border-radius-full background-slate-50 color-text-white-400 width-9 height-9">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="display-block icon icon-tabler icon-tabler-list" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="padding: 8px 8px;">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M9 6l11 0"></path>
+                                <path d="M9 12l11 0"></path>
+                                <path d="M9 18l11 0"></path>
+                                <path d="M5 6l0 .01"></path>
+                                <path d="M5 12l0 .01"></path>
+                                <path d="M5 18l0 .01"></path>
+                            </svg>
+                        </span>
+
+                        <span class="display-block margin-y-2 border-radius-full background-slate-50 color-text-white-400 width-9 height-9">
+                            
+                            <svg xmlns="http://www.w3.org/2000/svg" class="display-block icon icon-tabler icon-tabler-messages" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="padding: 8px 8px;">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10"></path>
+                                <path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2"></path>
+                            </svg>
+                        </span>
+
+                        <span class="display-block margin-y-2 border-radius-full background-slate-50 color-text-white-400 width-9 height-9">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="display-block icon icon-tabler icon-tabler-settings" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="padding: 8px 8px;">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z"></path>
+                                <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                            </svg>
+                        </span>
+
+                        <span class="display-block margin-y-2 border-radius-full background-slate-50 color-text-white-400 width-9 height-9">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="display-block icon icon-tabler icon-tabler-category" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="padding: 8px 8px;">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M4 4h6v6h-6z"></path>
+                                <path d="M14 4h6v6h-6z"></path>
+                                <path d="M4 14h6v6h-6z"></path>
+                                <path d="M17 17m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                            </svg>
+                        </span>
+
+                    </div>
+                </div>
             </div>
             <!-- Map View -->
             
-            <div class="products-view"></div>
+            <div class="products-view">
+                <div class="list-products-on-mapbox"></div>
+                <div class="featured-product"></div>
+            </div>
             <!-- Products View -->
         </div>
         <!-- Data Products -->
