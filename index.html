@@ -137,8 +137,8 @@
         <!-- Data & Searching -->
 
         <div class="display-flex justify-content-start align-items-center background-slate-50 height-full">
-            <div class="map-view position-relative height-full">
-                <div id='map' style='width: 800px; height: 800px;'></div>
+            <div class="map-view position-relative width-2/5 height-full">
+                <div id='map' style='height: 800px;' class="width-full"></div>
                 <div class="mapbox-navigation padding-x-1 padding-b-2 padding-t-2 background-white border-radius-full position-absolute pos-left-8 pos-top-28">
                     <div class="map-box-nav display-block">
                         <span class="display-block margin-y-2 border-radius-full width-9 height-9 mapbox-active">
@@ -206,9 +206,297 @@
             </div>
             <!-- Map View -->
             
-            <div class="products-view">
-                <div class="list-products-on-mapbox"></div>
-                <div class="featured-product"></div>
+            <div class="products-view position-relative width-3/5 height-full margin-5">
+                <div class="list-products-on-mapbox display-flex justify-content-start align-items-center margin-2 gap-5 overflow-hidden">
+                    <div class="background-transparent border-radius-xl display-block width-48 border-width border-style-solid border-color-slate-200 overflow-hidden">
+                        <div class="product-featured-image width-full height-38">
+                            <img src="./assets/images/houses/home-unsplash-03.jpeg" alt="" class="width-full height-full object-fit-cover">
+                        </div>
+                        <div class="product-excerpt padding-1 font-family-sans">
+                            <span class="prodcut-location color-text-white-400 font-text-xss display-flex justify-content-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin margin-r-0.5 color-text-dark" width="16" height="16" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M12 11m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"></path>
+                                </svg>
+                                Plage BCEAO 1, Yoff Dakar
+                            </span>
+                            <span class="product-title color-text-white-900 display-block font-text-sm margin-y-1">Villa à vendre, blablabla</span>
+                            <div class="product-extras font-text-xss display-flex justify-content-between align-items-center">
+                                <div class="extras display-flex justify-content-start align-items-center">
+
+                                    <span class="background-blue-light color-text-blue-400 border-radius-full margin-r-0.5 width-6 height-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bed" width="16" height="16" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="padding: 4px 4px;">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M3 7v11m0 -4h18m0 4v-8a2 2 0 0 0 -2 -2h-8v6"></path>
+                                            <path d="M7 10m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="color-text-white-400">2 Bedroom</span>
+
+                                </div>
+
+                                <div class="extras display-flex justify-content-start align-items-center">
+
+                                    <span class="background-blue-light color-text-blue-400 border-radius-full margin-r-0.5 width-6 height-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bath" width="16" height="16" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="padding: 4px 4px;">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-3a1 1 0 0 1 1 -1z"></path>
+                                            <path d="M6 12v-7a2 2 0 0 1 2 -2h3v2.25"></path>
+                                            <path d="M4 21l1 -1.5"></path>
+                                            <path d="M20 21l-1 -1.5"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="color-text-white-400">2 Bathroom</span>
+
+                                </div>
+                            </div>
+                            <!-- .products-extras -->
+                        </div>
+                    </div>
+                    <!-- Product item -->
+                    <div class="background-transparent border-radius-xl display-block width-48 border-width border-style-solid border-color-slate-200 overflow-hidden">
+                        <div class="product-featured-image width-full height-38">
+                            <img src="./assets/images/houses/home-unsplash-03.jpeg" alt="" class="width-full height-full object-fit-cover">
+                        </div>
+                        <div class="product-excerpt padding-1 font-family-sans">
+                            <span class="prodcut-location color-text-white-400 font-text-xss display-flex justify-content-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin margin-r-0.5 color-text-dark" width="16" height="16" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M12 11m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"></path>
+                                </svg>
+                                Plage BCEAO 1, Yoff Dakar
+                            </span>
+                            <span class="product-title color-text-white-900 display-block font-text-sm margin-y-1">Villa à vendre, blablabla</span>
+                            <div class="product-extras font-text-xss display-flex justify-content-between align-items-center">
+                                <div class="extras display-flex justify-content-start align-items-center">
+
+                                    <span class="background-blue-light color-text-blue-400 border-radius-full margin-r-0.5 width-6 height-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bed" width="16" height="16" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="padding: 4px 4px;">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M3 7v11m0 -4h18m0 4v-8a2 2 0 0 0 -2 -2h-8v6"></path>
+                                            <path d="M7 10m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="color-text-white-400">2 Bedroom</span>
+
+                                </div>
+
+                                <div class="extras display-flex justify-content-start align-items-center">
+
+                                    <span class="background-blue-light color-text-blue-400 border-radius-full margin-r-0.5 width-6 height-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bath" width="16" height="16" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="padding: 4px 4px;">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-3a1 1 0 0 1 1 -1z"></path>
+                                            <path d="M6 12v-7a2 2 0 0 1 2 -2h3v2.25"></path>
+                                            <path d="M4 21l1 -1.5"></path>
+                                            <path d="M20 21l-1 -1.5"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="color-text-white-400">2 Bathroom</span>
+
+                                </div>
+                            </div>
+                            <!-- .products-extras -->
+                        </div>
+                    </div>
+                    <!-- Product item -->
+                    <div class="background-transparent border-radius-xl display-block width-48 border-width border-style-solid border-color-slate-200 overflow-hidden">
+                        <div class="product-featured-image width-full height-38">
+                            <img src="./assets/images/houses/home-unsplash-03.jpeg" alt="" class="width-full height-full object-fit-cover">
+                        </div>
+                        <div class="product-excerpt padding-1 font-family-sans">
+                            <span class="prodcut-location color-text-white-400 font-text-xss display-flex justify-content-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin margin-r-0.5 color-text-dark" width="16" height="16" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M12 11m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"></path>
+                                </svg>
+                                Plage BCEAO 1, Yoff Dakar
+                            </span>
+                            <span class="product-title color-text-white-900 display-block font-text-sm margin-y-1">Villa à vendre, blablabla</span>
+                            <div class="product-extras font-text-xss display-flex justify-content-between align-items-center">
+                                <div class="extras display-flex justify-content-start align-items-center">
+
+                                    <span class="background-blue-light color-text-blue-400 border-radius-full margin-r-0.5 width-6 height-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bed" width="16" height="16" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="padding: 4px 4px;">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M3 7v11m0 -4h18m0 4v-8a2 2 0 0 0 -2 -2h-8v6"></path>
+                                            <path d="M7 10m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="color-text-white-400">2 Bedroom</span>
+
+                                </div>
+
+                                <div class="extras display-flex justify-content-start align-items-center">
+
+                                    <span class="background-blue-light color-text-blue-400 border-radius-full margin-r-0.5 width-6 height-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bath" width="16" height="16" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="padding: 4px 4px;">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-3a1 1 0 0 1 1 -1z"></path>
+                                            <path d="M6 12v-7a2 2 0 0 1 2 -2h3v2.25"></path>
+                                            <path d="M4 21l1 -1.5"></path>
+                                            <path d="M20 21l-1 -1.5"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="color-text-white-400">2 Bathroom</span>
+
+                                </div>
+                            </div>
+                            <!-- .products-extras -->
+                        </div>
+                    </div>
+                    <!-- Product item -->
+                    <div class="background-transparent border-radius-xl display-block width-48 border-width border-style-solid border-color-slate-200 overflow-hidden">
+                        <div class="product-featured-image width-full height-38">
+                            <img src="./assets/images/houses/home-unsplash-03.jpeg" alt="" class="width-full height-full object-fit-cover">
+                        </div>
+                        <div class="product-excerpt padding-1 font-family-sans">
+                            <span class="prodcut-location color-text-white-400 font-text-xss display-flex justify-content-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin margin-r-0.5 color-text-dark" width="16" height="16" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M12 11m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"></path>
+                                </svg>
+                                Plage BCEAO 1, Yoff Dakar
+                            </span>
+                            <span class="product-title color-text-white-900 display-block font-text-sm margin-y-1">Villa à vendre, blablabla</span>
+                            <div class="product-extras font-text-xss display-flex justify-content-between align-items-center">
+                                <div class="extras display-flex justify-content-start align-items-center">
+
+                                    <span class="background-blue-light color-text-blue-400 border-radius-full margin-r-0.5 width-6 height-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bed" width="16" height="16" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="padding: 4px 4px;">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M3 7v11m0 -4h18m0 4v-8a2 2 0 0 0 -2 -2h-8v6"></path>
+                                            <path d="M7 10m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="color-text-white-400">2 Bedroom</span>
+
+                                </div>
+
+                                <div class="extras display-flex justify-content-start align-items-center">
+
+                                    <span class="background-blue-light color-text-blue-400 border-radius-full margin-r-0.5 width-6 height-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bath" width="16" height="16" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="padding: 4px 4px;">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-3a1 1 0 0 1 1 -1z"></path>
+                                            <path d="M6 12v-7a2 2 0 0 1 2 -2h3v2.25"></path>
+                                            <path d="M4 21l1 -1.5"></path>
+                                            <path d="M20 21l-1 -1.5"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="color-text-white-400">2 Bathroom</span>
+
+                                </div>
+                            </div>
+                            <!-- .products-extras -->
+                        </div>
+                    </div>
+                    <!-- Product item -->
+                    <div class="background-transparent border-radius-xl display-block width-48 border-width border-style-solid border-color-slate-200 overflow-hidden">
+                        <div class="product-featured-image width-full height-38">
+                            <img src="./assets/images/houses/home-unsplash-03.jpeg" alt="" class="width-full height-full object-fit-cover">
+                        </div>
+                        <div class="product-excerpt padding-1 font-family-sans">
+                            <span class="prodcut-location color-text-white-400 font-text-xss display-flex justify-content-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin margin-r-0.5 color-text-dark" width="16" height="16" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M12 11m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"></path>
+                                </svg>
+                                Plage BCEAO 1, Yoff Dakar
+                            </span>
+                            <span class="product-title color-text-white-900 display-block font-text-sm margin-y-1">Villa à vendre, blablabla</span>
+                            <div class="product-extras font-text-xss display-flex justify-content-between align-items-center">
+                                <div class="extras display-flex justify-content-start align-items-center">
+
+                                    <span class="background-blue-light color-text-blue-400 border-radius-full margin-r-0.5 width-6 height-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bed" width="16" height="16" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="padding: 4px 4px;">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M3 7v11m0 -4h18m0 4v-8a2 2 0 0 0 -2 -2h-8v6"></path>
+                                            <path d="M7 10m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="color-text-white-400">2 Bedroom</span>
+
+                                </div>
+
+                                <div class="extras display-flex justify-content-start align-items-center">
+
+                                    <span class="background-blue-light color-text-blue-400 border-radius-full margin-r-0.5 width-6 height-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bath" width="16" height="16" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="padding: 4px 4px;">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-3a1 1 0 0 1 1 -1z"></path>
+                                            <path d="M6 12v-7a2 2 0 0 1 2 -2h3v2.25"></path>
+                                            <path d="M4 21l1 -1.5"></path>
+                                            <path d="M20 21l-1 -1.5"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="color-text-white-400">2 Bathroom</span>
+
+                                </div>
+                            </div>
+                            <!-- .products-extras -->
+                        </div>
+                    </div>
+                    <!-- Product item -->
+
+                </div>
+                <!-- Product list caroussel -->
+
+                <div class="featured-product display-flex justify-content-start height-2/5 background-white border-radius-2xl margin-x-2 gap-2">
+                    <div class="featured-product-image height-full width-80 position-relative background-transparent">
+                        <img src="./assets/images/houses/home-unsplash-03.jpeg" alt="" class="height-full width-72 object-fit-cover border-radius-2xl z-index-10 position-relative">
+                    </div>
+                    <div class="display-block width-full padding-x-4 padding-y-2">
+
+                        <div class="display-flex justify-content-between align-items-center width-full font-text-sm font-family-sans text-transform-capitalize">
+                            <span class="color-text-green-400">most popular</span>
+                            <span class="color-text-white-400 display-flex align-items-center gap-2">
+                                share
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-share" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M6 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                                    <path d="M18 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                                    <path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                                    <path d="M8.7 10.7l6.6 -3.4"></path>
+                                    <path d="M8.7 13.3l6.6 3.4"></path>
+                                </svg>
+                            </span>
+                        </div>
+
+                        <div class="product-title padding-y-2">
+                            <h2 class="font-family-mono font-text-2xl">Villa à vendre, blablabla</h2>
+                            <!-- Product title -->
+
+                            <div class="margin-y-1 display-flex align-items-center gap-1">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin-filled" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0m-8.657 -5.657a3 3 0 0 0 6 0a3 3 0 0 0 -6 0" fill="currentColor"></path>
+                                    </svg>
+                                </span>
+                                <span class="color-text-white-400 font-family-sans font-text-sm">Plage BCEAO 1, Yoff Dakar</span>
+                            </div>
+                            <!-- Product Address location -->
+
+                            <div class="width-fit background-slate-light margin-y-1 padding-y-1 padding-x-3 border-radius-full font-family-sans font-text-sm">
+                                <span class="color-text-dark">100.000.0000</span>
+                                <span class="color-text-white-400 text-transform-uppercase"> FCFA</span>
+                            </div>
+                            <!-- Product price -->
+
+                            <div></div>
+                            <!-- Product details -->
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- .featured product -->
             </div>
             <!-- Products View -->
         </div>

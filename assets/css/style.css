@@ -76,3 +76,20 @@ ul li span a:hover {
 .mapbox-active {
     background-color: var(--blue-600);
 }
+
+.featured-product {
+    height: 38%!important;
+}
+
+/*  */
+.featured-product-image::before {
+    content: "";
+    position: absolute;
+    right: -12px;
+    top: 9px;
+    bottom: 0;
+    background-color: rgb(226 232 240);
+    width: 245px;
+    height: 95%;
+    border-radius: 1rem;
+}
